@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Notes App</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Notes App</h1>
+            <p>Take notes and never forget</p>
+        </div>
+    </header>
+    <section class="container">
+        <div class="options-header">
+            <p>Filter todos</p>
+            <select>
+                <option>Sort by last edited</option>
+                <option>Sort by last entry</option>
+            </select>
+        </div>
+
+        <div class="notes-list">
+        </div>
+        <div class="create-note">
+            <button class="button">Create Note</button>
+        </div>
+    </section>
+     <section class="create-new-note">
+         <h4 class="new-note-header">Create new note <span style="font-size: 20px;padding-left: 120px;cursor: pointer;" class="close">x</span></h4>
+         <input type="text" class="header" placeholder="note's heading">
+         <textarea id="textarea" cols="30" rows="10" placeholder="note's content"></textarea>
+         <input type="submit" value="create note" class="submit">
+     </section>
+
+     <section class="create-new-note-edit">
+        <h4 class="new-note-header">Edit note<span style="font-size: 20px;padding-left: 190px;
+        cursor: pointer;" class="close">x</span></h4>
+        <input type="text" class="header">
+        <textarea id="textarea" cols="30" rows="10"></textarea>
+        <input type="submit" value="update note" class="submit">
+    </section>
+<script src="main.js"></script>    
+</body>
+</html>
